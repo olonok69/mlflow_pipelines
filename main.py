@@ -27,19 +27,20 @@ def run(args):
                 "data_url": data_url,
                 "data_path": DATA_FOLDER,
             },
+            run_name= "data_download",
         )
 
     if "data_cleaning" in active_steps:
         # data cleaning
         _ = mlflow.run(f"data_cleaning/", "main", parameters={
                 "data_path": DATA_FOLDER,
-            },)
+            },run_name= "data_cleaning",)
 
     if "training" in active_steps:
         # training
         _ = mlflow.run(f"training/", "main", parameters={
                 "data_path": DATA_FOLDER,
-            },)
+            },run_name= "training",)
 
 
 if __name__ == "__main__":
