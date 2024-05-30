@@ -10,3 +10,4 @@ dependencies:
   - mlflow
   - pandas
   - scikit-learn
+  - numpy
