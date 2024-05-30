@@ -1,0 +1,16 @@
+name: mlflow_pipeline
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      steps:
+        description: steps you want to perform seprarated by comma
+        type: str
+
+      data_url:
+        descripton: url of data
+        type: uri
+
+    command: >-
+      python main.py --steps {steps} --data_url {data_url}

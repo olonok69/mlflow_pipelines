@@ -1,0 +1,14 @@
+name: download_data
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      data_url:
+        description: url of data to download
+        type: str
+      data_path:
+        description: data path 
+        type: str
+    command: >-
+      python run.py --data_url {data_url} --data_path {data_path}
