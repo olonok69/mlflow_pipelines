@@ -1,8 +1,5 @@
-name: docker-example_pipeline
-
-docker_env:
-  image:  mlflow-docker
-
+name: mlflow_pipeline
+conda_env: conda.yml
 
 entry_points:
   main:
