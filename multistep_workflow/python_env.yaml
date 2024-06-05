@@ -1,0 +1,11 @@
+name: mlflow_conda_pipe_yaml
+build_dependencies:
+  - pip
+dependencies:
+  - python ==3.9
+  - tensorflow==1.15.2
+  - keras==2.2.4
+  - mlflow>=1.0
+  - pyspark
+  - requests
+  - click

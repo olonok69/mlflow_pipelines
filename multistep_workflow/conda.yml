@@ -1,0 +1,19 @@
+#conda.yml
+name: mlflow_conda_yaml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python == 3.9
+  - requests
+  - pip
+  - pandas
+  - scikit-learn
+  - pip:
+    - mlflow
+    - tensorflow==2.5.0
+    - keras==2.2.4
+    - pyspark
+    - requests
+    - click
+
