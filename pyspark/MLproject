@@ -1,0 +1,10 @@
+name: multistep_example
+
+docker_env:
+  image:  pyspark_mlflow
+
+entry_points:
+
+  main:
+    command: "python pipeline.py"
+

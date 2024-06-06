@@ -1,6 +1,7 @@
 name: multistep_example
 
-conda_env: conda.yml
+docker_env:
+  image:  pyspark_mlflow
 
 entry_points:
   load_raw_data:
